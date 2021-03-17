@@ -1,5 +1,4 @@
 import { Client } from "@typeit/discord";
-import config from './config/config.json';
 import { HolyBibleController } from "./controllers";
 
 async function start() {
@@ -27,7 +26,7 @@ async function start() {
     return;
   });
 
-  await client.login(config.BOT_TOKEN);
+  await client.login(process.env.BOT_TOKEN);
 }
 
 start();
