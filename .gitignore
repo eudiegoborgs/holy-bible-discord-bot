@@ -1,0 +1,9 @@
+lib/
+coverage/
+node_modules/
+vendor/
+coverage-report/
+package-lock.json
+mongo-volume/
+*/**/.DS_Store
+.DS_Store

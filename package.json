@@ -1,0 +1,37 @@
+{
+  "name": "holy-bible-discord-bot",
+  "version": "1.0.0",
+  "description": "It's a bot for discord thats contains the holy bible contents.",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "tslint --project tsconfig.json",
+    "build": "tsc",
+    "start": "npm run build && node ./lib/index.js",
+    "test": "npm run build && jest"
+  },
+  "engines": {
+    "node": "12"
+  },
+  "keywords": [
+    "holy",
+    "bible",
+    "discord"
+  ],
+  "author": "Diego Borges",
+  "license": "ISC",
+  "dependencies": {
+    "@typeit/discord": "^4.0.9",
+    "@types/axios": "^0.14.0",
+    "axios": "^0.19.2",
+    "discord.js": "^12.5.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/jest": "^25.2.2",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.0.0",
+    "tslint": "~5.8.0",
+    "typescript": "^3.9.2"
+  }
+}
