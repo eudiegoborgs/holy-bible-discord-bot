@@ -1,5 +1,7 @@
 import { Client } from "@typeit/discord";
 import { HolyBibleController } from "./controllers";
+import http from 'http';
+
 
 async function start() {
   const botPrefix = "/biblia";
@@ -27,6 +29,16 @@ async function start() {
   });
 
   await client.login(process.env.BOT_TOKEN);
+
+  http
+    .createServer((req, res) => {
+      res.writeHead(200, {
+        "Content-type": "text/plain",
+      });
+      res.write("Hey");
+      res.end();
+    })
+    .listen(4000);
 }
 
 start();
