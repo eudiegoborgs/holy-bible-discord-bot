@@ -38,7 +38,7 @@ async function start() {
       res.write("Hey");
       res.end();
     })
-    .listen(4000);
+    .listen(process.env.PORT || 5000);
 }
 
 start();
